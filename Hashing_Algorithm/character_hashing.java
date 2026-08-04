@@ -20,6 +20,7 @@ public class character_hashing{
             System.out.print("Enter the query: ");
             char ch = sc.nextLine().charAt(0);
             System.out.println("The frequency of " + ch +" is: " + hash[ch]);
+            System.out.println("The frequency of " + Character.toUpperCase(ch) +" is: " + hash[Character.toUpperCase(ch)]);
         }
     sc.close();
     }

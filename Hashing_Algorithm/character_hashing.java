@@ -18,8 +18,8 @@ public class character_hashing{
         int num = sc.nextInt();sc.nextLine();
         for(int i=0;i<num;i++){
             System.out.print("Enter the query: ");
-            char ch = sc.nextLine().charAt(0);
-            System.out.println("The frequency of " + ch +" is: " + hash[ch]);
+            char q = sc.nextLine().charAt(0);
+            System.out.println("The frequency of " + q +" is: " + hash[q]);
         }
     sc.close();
     }

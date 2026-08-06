@@ -1,6 +1,6 @@
 package Java.hashMap_Algorithm;
 import java.util.*;
-public class hashMap{
+public class numberHashMap{
     public static void main(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter size of the array: ");

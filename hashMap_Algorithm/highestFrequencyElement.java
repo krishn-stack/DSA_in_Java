@@ -2,6 +2,7 @@ package Java.hashMap_Algorithm;
 import java.util.*;
 public class highestFrequencyElement {
 
+    //function to find the element with the highest frequency in an array using HashMap
     static int highestElement(int nums[]){
        int maxValue = 0; int maxKey = 0;
        HashMap<Integer, Integer> hashMap = new HashMap<>();
@@ -12,18 +13,20 @@ public class highestFrequencyElement {
                 hashMap.put(nums[i], 1);
         }
 
+        //loop to find the element with the highest frequency and stores the maxKey and maxValue(frequency)
         for(Map.Entry<Integer, Integer> element : hashMap.entrySet()){
             if(element.getValue() > maxValue)
                 maxKey = element.getKey();
                 maxValue = element.getValue();
         }
 
+        //loop to find the element with the highest frequency and if there are multiple elements with the same frequency, it returns the smallest element
         for(Map.Entry<Integer, Integer> element : hashMap.entrySet()){
             if(element.getValue() == hashMap.get(maxKey) && element.getKey() <= maxKey)
                 maxKey = element.getKey();
                 maxValue = element.getValue();
         }
-       return maxKey;
+       return maxKey; //returns the key element with highest frequency
     }
 
     public static void main(){

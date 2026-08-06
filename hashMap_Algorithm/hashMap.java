@@ -1,3 +1,4 @@
+package Java.hashMap_Algorithm;
 import java.util.*;
 public class hashMap{
     public static void main(){
@@ -30,6 +31,7 @@ public class hashMap{
             else
                 System.out.println("Frequency of " + query + ": 0");
         }
+    sc.close();
     }
 
 }

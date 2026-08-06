@@ -20,6 +20,12 @@ public class hashMap{
                 hashMap.put(arr[i], 1);
         }
 
+        //printing hashmap
+        System.out.println("The frequency of the elements in the array are: ");
+        for(Map.Entry<Integer, Integer> element : hashMap.entrySet()){
+            System.out.println(element.getKey() + " -> " + element.getValue());
+        }
+
         //fetching the frequency of the elements using hashMap
         System.out.print("Enter number of queries you want to check for: ");
         int queries = sc.nextInt();

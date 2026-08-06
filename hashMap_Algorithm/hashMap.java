@@ -9,6 +9,7 @@ public class hashMap{
         for(int i=0;i<size;i++)
             arr[i] = sc.nextInt();
 
+        //pre-computing using hashMap
         HashMap<Integer, Integer> hashMap = new HashMap<>();
         for(int i=0;i<size;i++){
             if(hashMap.containsKey(arr[i])){
@@ -18,6 +19,7 @@ public class hashMap{
                 hashMap.put(arr[i], 1);
         }
 
+        //fetching the frequency of the elements using hashMap
         System.out.print("Enter number of queries you want to check for: ");
         int queries = sc.nextInt();
         for(int i=0;i<queries;i++){

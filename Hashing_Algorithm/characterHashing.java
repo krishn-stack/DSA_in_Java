@@ -1,5 +1,5 @@
 import java.util.*;
-public class character_hashing{
+public class characterHashing{
     public static void main(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a string: ");

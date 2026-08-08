@@ -29,6 +29,7 @@ public class selectionSort {
         System.out.println("----Sorted Array----");
         for(int i=0;i<n;i++)
             System.out.print(a[i] + " ");
+        sc.close();
     }
 }
 

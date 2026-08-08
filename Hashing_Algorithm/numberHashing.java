@@ -1,5 +1,5 @@
 import java.util.*;
-public class number_hashing {
+public class numberHashing {
     public static void main(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter size of the array: ");

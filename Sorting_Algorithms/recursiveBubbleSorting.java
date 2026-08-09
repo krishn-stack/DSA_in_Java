@@ -3,6 +3,7 @@ import java.util.*;
 public class recursiveBubbleSorting{
     
     static int[] recursiveBubble(int nums[], int n){
+        boolean swapped = false;
         if(n == 1)
             return nums;
         
@@ -11,8 +12,12 @@ public class recursiveBubbleSorting{
                 int temp = nums[i];
                 nums[i] = nums[i+1];
                 nums[i+1] = temp;
+                swapped = true;
             }
         }
+        if(!swapped)    //optimized for the best case(already sorted array)
+            return nums;  //don't need to run the same entire loop again and again for the best case mentioned above.
+
         recursiveBubble(nums, n-1);
         return nums;
     }

@@ -1,4 +1,4 @@
-package Java.hashingAlgorithms;
+package Java.hashingAlgorithm;
 import java.util.*;
 public class characterHashing{
     public static void main(){

@@ -20,6 +20,15 @@ public class bubbleSorting{
         }
     }
 
+    /*static boolean isSorted(int[] nums) {    //function to  check whether array is sorted or not
+        for(int i=0;i<nums.length-1;i++){
+            if(nums[i] >= nums[i+1])
+                return false;
+        }
+        return true;
+    }*/
+
+
     public static void main(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter size of the array: ");
@@ -30,6 +39,7 @@ public class bubbleSorting{
             a[i] = sc.nextInt();
 
         bubbleSort(a, n);
+        //System.out.println(isSorted(a));
 
         System.out.println("----Sorted Array----");
         for(int i=0;i<n;i++)

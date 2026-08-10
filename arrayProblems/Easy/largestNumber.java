@@ -20,5 +20,7 @@ public class largestNumber{
             nums[i] = sc.nextInt();
 
         System.out.println("Largest number in the array: " + findLargestNumber(nums));
+        sc.close();
     }
+
 }

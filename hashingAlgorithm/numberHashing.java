@@ -1,3 +1,4 @@
+package Java.hashingAlgorithm;
 import java.util.*;
 public class numberHashing {
     public static void main(){

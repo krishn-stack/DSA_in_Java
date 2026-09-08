@@ -5,17 +5,15 @@ public class recursiveInsertionSorting {
     static int[] recursiveInsertion(int nums[], int n){
         if(n == 1)
             return nums;
-        int key = 0;
-        for(int i=1;i<n;i++){
-            key = nums[i];
-            int j = i-1;
+
+        recursiveInsertion(nums, n-1);
+            int key = nums[n-1];
+            int j = n-2;
             while(j>=0 && nums[j]>key){
                 nums[j+1] = nums[j];
                 j-=1;
             }
             nums[j+1] = key;
-        }
-        recursiveInsertion(nums, n-1);
         return nums;
     }
 

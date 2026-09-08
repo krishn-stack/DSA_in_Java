@@ -1,4 +1,4 @@
-package Java.hashMap_Algorithm;
+package hashMap_Algorithm;
 import java.util.*;
 public class characterHashMap {
     public static void main(){

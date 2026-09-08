@@ -1,4 +1,4 @@
-package Java.arrayProblems.Easy;
+package arrayProblems.Easy;
 import java.util.*;
 public class largestNumber{
     

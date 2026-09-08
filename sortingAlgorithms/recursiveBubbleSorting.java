@@ -1,4 +1,4 @@
-package Java.sortingAlgorithms;
+package sortingAlgorithms;
 import java.util.*;
 public class recursiveBubbleSorting{
     
